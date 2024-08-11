@@ -13,15 +13,42 @@
         <script src="script.js"></script>
     </head>
     <body>
+        <!-- h1-h6是标题，重要性由高到低
+            p 是段落，a 是超链接，img 是图片，ul 是无序列表，ol 是有序列表，li 是列表项
+        -->
         <h2>Links to different parts of my homework</h2>
-        <h3>
-            <h3_1 href="1-intro.html">1 Introduction (fictional)</h3_1>
+        <table class="table">
+            <thead font="bold 28px Arial, sans-serif">
+                <tr>
+                    <th>基础</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="1-intro.html">1 Self Introduction (fictional)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="3-gallery.html">3 Picture Gallery</a></td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th>进阶</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Undecided</td>
+                </tr>
+            </tbody>
+            <link rel="stylesheet" href="style.css">
+        </table>
             
             
             
-            <link rel="stylesheet" href="style.css"></h3>
+            
         <!-- id 的优先级比class高 -->
-        <p class="font-red" id="my-p">my paragraph</p>
+        <!-- <p class="font-red" id="my-p">my paragraph</p> -->
         <!-- html 按顺序加载，在p 后面修改。所以最好把script 放在body 最后 -->
         <script src="script.js"></script>
     </body>
