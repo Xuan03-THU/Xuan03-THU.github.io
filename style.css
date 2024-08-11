@@ -1,0 +1,31 @@
+h2 {
+    color: #000000;
+    font: bold 28px Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-color: #efefef;
+    /*margin: 0px 0px 0px 0px;*/
+    width: 100%;
+    padding: 20px;
+    
+}
+
+h3 {
+    /*color: #ff0000;*/
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 20 px 10px 20px;
+    padding: 20px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    
+}
+
+.font-red {
+    color: #ff0000;
+}
+
+#my-p {
+    color: #00ff00;
+}
+
