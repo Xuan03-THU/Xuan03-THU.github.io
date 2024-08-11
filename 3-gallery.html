@@ -9,7 +9,6 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <!-- Link to external CSS file -->
         <link rel="stylesheet" href="style.css">
-        <!-- 链接到外部 JavaScript 文件，在这里引用对body没有影响 -->
         <script src="script.js"></script>
     </head>
     <body style="margin: 0;padding: 0;height: 100%;overflow: hidden;">
@@ -27,14 +26,18 @@
         </div>
 
         <div class="background-image"></div>
-        <!-- <div class="thumbnails">
-            <img src="3-1.jpg" data-large-src="https://imgapi.cn/bing.php" class="thumbnail">
-        </div> -->
+        <div class="thumbnails">
+            <img src="3-1.jpg" data-large-src="3-1.jpg" class="thumbnail">
+        </div>
 
-        <!-- <div class="modal">
-            <img class="modal-content" src="" alt="放大图片">
-        </div> -->
+        <!-- 模态框 -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="fullscreen-image" src="3-1.jpg" alt="放大后的图片">
+            </div>
+        </div>
 
-        <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
     </body>
 </html>
