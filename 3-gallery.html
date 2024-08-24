@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html style="margin: 0;padding: 0;height: 100%;overflow: hidden;">
     <head>
         <title>3-gallery</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, 
-        initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="HW 2">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <!-- Link to external CSS file -->
@@ -13,6 +13,13 @@
     </head>
     <body style="margin: 0;padding: 0;height: 100%;overflow: hidden;">
         <h2 style="background-color: transparent;">3 Picture Gallery</h2>
+
+        <div class="background-image"></div>
+        <div class="thumbnails">
+            <img src="3-1.jpg" data-large-src="3-1.jpg" class="thumbnail">
+            <img src="3-2.jpg" data-large-src="3-2.jpg" class="thumbnail">
+            <img src="3-3.jpg" data-large-src="3-3.jpg" class="thumbnail">
+        </div>
 
         <div>
             <table class="gallery_table">
@@ -24,20 +31,14 @@
                 </tbody>
             </table>
         </div>
-
-        <div class="background-image"></div>
-        <div class="thumbnails">
-            <img src="3-1.jpg" data-large-src="3-1.jpg" class="thumbnail">
-        </div>
-
+    
         <!-- 模态框 -->
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <img class="fullscreen-image" src="3-1.jpg" alt="放大后的图片">
+                <img class="fullscreen-image" src="" alt="放大后的图片">
             </div>
         </div>
 
-        <!-- <script src="script.js"></script> -->
     </body>
 </html>

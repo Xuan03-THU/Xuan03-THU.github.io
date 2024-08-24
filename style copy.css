@@ -4,14 +4,25 @@ h2 {
     text-align: center;
     font-weight: bold;
     background-color: #e0e0e0;
+    /*margin: 0px 0px 0px 0px;*/
     width: 100%;
     padding: 20px;
+    
+}
+
+h3 {
+    /*color: #ff0000;*/
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 20 px 10px 20px;
+    padding: 20px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    
 }
 
 table {
-    width: 80%;
-    position: relative;
-    left: 10%;
+    width: 100%;
     border-collapse: collapse;
 }
 th, td {
@@ -24,6 +35,31 @@ th {
     font-weight: bold;
 }
 
+/* 针对1-intro */
+.intro_container {
+    width: 80%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 2%;
+    margin-right: 10%;
+}
+.intro_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+.intro_table th, .intro_table td {
+    border: 0px;
+    padding: 8px;
+    text-align: left;
+    width: 50%;
+    margin-left: 10%;
+    
+}
+
+/* 针对3-gallery */
 .background-image {
     position: fixed;
     top: 0;
@@ -35,6 +71,16 @@ th {
     background-position: center;
     z-index: -1;
 }
+.gallery_table {
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: text-bottom;
+    table-layout: fixed;
+    padding: 0;
+}
+.gallery_table th, .gallery_table td {
+    background-color: transparent;
+}
 
 .thumbnails {
     position: relative;
@@ -42,7 +88,6 @@ th {
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 20px;
 }
 .thumbnails img {
     cursor: pointer;
@@ -50,8 +95,9 @@ th {
     transition: transform 0.3s ease-in-out;
 }
 .thumbnail {
-    width: 10%;
-    object-fit: cover;
+    width: 10%; /* 缩略图的宽度 */
+    /* height: 10%; 缩略图的高度 */
+    object-fit: cover; /* 图片填充整个容器 */
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
@@ -59,23 +105,9 @@ th {
     transform: scale(1.1);
 }
 
-.gallery_table {
-    width: 80%;
-    border-collapse: collapse;
-    vertical-align: text-bottom;
-    table-layout: fixed;
-    padding: 0; 
-    position: absolute;
-    left: 10%;
-    bottom: 10%;
-    margin: 0 auto;
-}
-.gallery_table th, .gallery_table td {
-    background-color: transparent;
-}
-
+/* 模态框 */
 .modal {
-    display: none;
+    display: none; /* 默认隐藏 */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -86,16 +118,18 @@ th {
     background-color: rgba(0,0,0,0.4);
 }
 
+/* 模态框的内容 */
 .modal-content {
     margin: 15% auto;
     background-color: #fefefe;
     border: 1px solid #888;
-    width: 60%;
+    width: 80%; /* 可以根据需要调整宽度 */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 20px;
     text-align: center;
 }
 
+/* 关闭按钮 */
 .close {
     color: #aaa;
     float: right;
@@ -111,9 +145,6 @@ th {
 }
 
 .fullscreen-image {
-    /* max-width: 100%; */
-    max-width: 60vw; /* 限制图片最大宽度 */
+    max-width: 100%;
     height: auto;
-    max-height: 60vh; /* 限制图片最大高度 */
-    margin: 0 auto; /* 居中 */
 }
